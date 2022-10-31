@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Challenge - DevBoost</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <!-- LADO ESQUERDO -->
+        <div class="container">
+            <img src="img/Logo - DevBoost.svg" class="container__logo" alt="Logo da DevBoost">
+            <ul class="menu-lista">
+                <li class="lista__item">
+                    <a href="#" class="lista__item-link">Posts</a>
+                </li>
+                <li class="lista__item">
+                    <a href="#" class="lista__item-link">Ferramentas</a>
+                </li>
+                <li class="lista__item">
+                    <a href="#" class="lista__item-link">Eventos</a>
+                </li>
+                <li class="lista__item">
+                    <a href="#" class="lista__item-link">Pessoas</a>
+                </li>
+                <li class="lista__item">
+                    <a href="#" class="lista__item-link">Grupos</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- LADO DIREITO-->
+        <div class="container">
+            <a href="#"><img src="img/Icon - Pesquisa.svg" class="container__icone" alt="Icone de Pesquisa"></a>
+            <a href="#"><img src="img/Icon - Grupo.svg" class="container__icone" alt="Icone de grupo"></a>
+            <a href="#"><img src="img/Icon - Notificação.svg" class="container__icone" alt="Icone de Notificação"></a>        
+            <a href="#" class="container__botao"><img src="img/healthicons_positive-outline.svg" alt="">Criar</a>
+        </div>
+    </header>
+
+    <section class="banner"> 
+        <div class="banner__descricao">
+            <h1 class="banner__titulo">Esse é o blog da <span class="banner__negrito-roxo">DevBoost</span></h1>
+            <p class="banner__texto">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit.<b class="banner__negrito">Tempus, 
+                proin augue neque</b> amet scelerisque scelerisque sit. 
+            </p>
+            <a href="#" class="banner__botao">Saiba mais</a>
+        </div>
+
+        <!-- IMAGEM FOGUETE -->
+        <div class="banner__foguete">
+            <img src="img/Foguete.svg" class="banner__foto-foguete" alt="Foto de um foguete">
+            <img src="img/Banner.svg" class="banner__foto-roxo">
+        </div>
+    </section>
+
+    <section class="conteudo">
+        <div class="conteudo__perfil">
+            <h3 class="conteudo__titulo">Perfil</h3>
+            <img src="img/Imagem de perfil.svg" class="foto__perfil"alt="Foto de perfil">
+            <h3 class="conteudo__titulo conteudo__titulo-nome">Fernando Pereira</h3>
+            <p class="conteudo__texto">Jornalista</p>
+
+            <div class="conteudo__indicacoes">
+                <table class="conteudo__tabela">
+                    <thead>
+                        <tr class="tabela-linha">
+                            <th class="tabela-cabecalho tabela-cabecalho-primeiro">840</th>
+                            <th class="tabela-cabecalho">204</th>
+                            <th class="tabela-cabecalho">88%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tabela-linha">
+                            <td class="tabela-corpo">Postagem</td>
+                            <td class="tabela-corpo">Favoritados</td>
+                            <td class="tabela-corpo">Score</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="conteudo__utlimas-postagens">
+            <h3 class="conteudo__titulo conteudo__titulo-postagens">Últimos lançamentos</h3>
+            <div class="conteudo__noticias">
+                <img src="img/Astronauto.svg" class="conteudo__imagem" alt="Foto do astronauta">
+                <p class="conteudo__titulo-noticias">Categoria</p>
+                <p class="conteudo__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie.</p>
+                <p class="conteudo__autor">Autor: Fernando Pereira</p>
+            </div>
+            <div class="conteudo__noticias">
+                <img src="img/Robô.svg" class="conteudo__imagem" alt="Foto do robô">
+                <p class="conteudo__titulo-noticias">Categoria</p>
+                <p class="conteudo__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dis.</p>
+                <p class="conteudo__autor">Autor: Fernando Pereira</p>
+            </div>
+            <div class="conteudo__noticias">
+                <img src="img/Fogueto-no-espaço.svg" class="conteudo__imagem" alt="Foto do astronauta">
+                <p class="conteudo__titulo-noticias">Categoria</p>
+                <p class="conteudo__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="conteudo__autor"><b class="conteudo__negrito">Autor:</b> Fernando Pereira</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,256 @@
+:root {
+    --titulo-e-destaque: 'Montserrat';
+    --fonte-principal: 'Inter';
+    --cor-primaria: #0A071B;
+    --cor-secundario: #696C85;
+    --cinza: #828282;
+    --cor-da-pagina: #E5E5E5;
+    --roxo: #5138EE;
+    --cor-bordas: #EBEBEB;
+    --cinza-claro: #dcdae5;
+}
+
+body {
+    background-color: var(--cor-da-pagina);
+    font-family: var(--fonte-principal);
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 10px 4em 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-lista {
+    display: flex;
+    justify-content: center;
+    margin: 0 2em;
+}
+
+.lista__item-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-secundario);
+    text-decoration: none;
+    margin: 0 .5em;
+}
+
+.container__icone {
+    margin: 0 1em;
+}
+
+.container__botao {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background-color: var(--roxo);
+    border-radius: 24px;
+    text-decoration: none;
+    padding: .5em 1.3em;
+}
+
+.container__botao img {
+    margin-right: .3em;
+}
+
+/* BANNER */
+.banner {
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 10px 40px 10px;
+    height: 324px;
+}
+
+.banner__descricao {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 100px;
+}
+
+.banner__titulo {
+    font-family: var(--titulo-e-destaque);
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.banner__negrito-roxo {
+    color: var(--roxo);
+}
+
+.banner__texto {
+    color: #ffffff;
+    line-height: 24px;
+    padding: 1em 0;
+}
+
+.banner__negrito {
+    font-weight: bold;
+}
+
+.banner__botao {
+    text-decoration: none;
+    width: 90px;
+    background-color: var(--roxo);
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    padding: .5em 1.5em;
+    border-radius: 34px;
+    text-align: center;
+}
+
+.banner__foto-foguete {
+    position: absolute;
+    height: 364px;
+    width: 128px;
+    left: 50%;
+    top: -40px;
+}
+
+.banner__foto-roxo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 323px;
+}
+
+/* CONTEUDO */
+.conteudo {
+    display: grid;
+    grid-template-columns: 30% auto;
+    margin: 0 10px;
+    gap: 0 50px;
+}
+
+.conteudo__perfil {
+    border: 2px solid var(--cinza);
+    border-radius: 8px;
+    padding: 2em;
+    text-align: center;
+
+}
+
+.conteudo__titulo {
+    font-family: var(--titulo-e-destaque);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    text-align: start;
+    margin-left: 10px;
+}
+
+.conteudo__titulo-nome {
+    text-align: center;
+    font-size: 18px;
+}
+
+.conteudo__texto {
+    font-family: var(--fonte-principal);
+    color: var(--cinza);
+    font-size: 15px;
+    font-weight: 400;
+    padding: .5em 0 2em 0;
+}
+
+.conteudo__tabela {
+    width: 25vw;
+    margin: 0 auto;
+    border: 1px solid var(--cinza);
+}
+
+.tabela-cabecalho {
+    font-family: var(--titulo-e-destaque);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    padding: 15px 0 5px 0;
+}
+
+.tabela-cabecalho-primeiro {
+    color: var(--roxo);
+}
+
+.tabela-coluna {
+    padding: 5px 5px;
+}
+
+.tabela-corpo {
+    font-family: var(--fonte-principal);
+    color: var(--cinza);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 10px 15px 15px;
+    text-align: center;
+}
+
+.conteudo__utlimas-postagens {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    gap: 0 30px;
+    border: 2px solid var(--cinza);
+    border-radius: 8px;
+    padding: 2em;
+    text-align: center;
+}
+
+.conteudo__titulo-postagens {
+    grid-column: 1/4;
+}
+
+.conteudo__noticias {
+    border: 1px solid var(--cinza);
+    border-radius: 8px;
+    width: 235px;
+}
+
+.conteudo__titulo-noticias {
+    font-family: var(--titulo-e-destaque);
+    color: var(--roxo);
+    background-color: var(--cinza-claro);
+    border-radius: 8px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: .5em 0 .5em 1em;
+}
+
+.conteudo__descricao {
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    line-height: 23px;
+    text-align: start;
+    margin: 0 0 .5em 1em; 
+}
+
+.conteudo__autor {
+    font-family: var(--fonte-principal);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--cor-secundario);
+    margin-left: 1em;
+    text-align: start;
+    
+}
+
+.conteudo__negrito {
+    font-family: var(--fonte-principal);
+    font-size: 13px;
+    font-weight: 700;
+}
